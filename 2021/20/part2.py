@@ -23,6 +23,6 @@ for step in range(STEPS):
             row.append(lookup[int(index, 2)])
         new_image.append(row)
     image = new_image
-    void = lookup[1] if void else lookup[0]
+    void = lookup[-1] if void else lookup[0]
 
 print(sum([sum(l) for l in image]))
